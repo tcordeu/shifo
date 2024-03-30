@@ -124,7 +124,7 @@ jobs:
 
     strategy:
       matrix:
-        os: [macos-12, ubuntu-22.04, windows-2022]
+        os: [macos-12, ubuntu-22.04]
 
     runs-on: ${{ matrix.os }}
 
@@ -153,12 +153,6 @@ jobs:
     - name: Install dependencies
       shell: bash
       run: bash < .github/scripts/conan-ci-setup.sh
-
-    - name: Setup MultiToolTask
-      if: matrix.os == 'windows-2022'
-      run: |
-        Add-Content "$env:GITHUB_ENV" 'UseMultiToolTask=true'
-        Add-Content "$env:GITHUB_ENV" 'EnforceProcessCountAcrossBuilds=true'
 
     - name: Configure
       shell: pwsh
