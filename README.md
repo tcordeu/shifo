@@ -1,4 +1,4 @@
-# shifo
+# Shifo
 Yet another DB!
 
 # Building and installing
@@ -11,4 +11,8 @@ See the [CONTRIBUTING](CONTRIBUTING.md) document.
 
 # Licensing
 
-See the [LICENSE](LICENSE.md) document.
+See the [LICENSE](LICENSE) document.
+
+# Author
+
+Thomas Cordeu <info@tcordeu.com>
